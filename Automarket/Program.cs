@@ -1,4 +1,5 @@
 using Automarket.DAL;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSQLServer(connection));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
 
 var app = builder.Build();
 

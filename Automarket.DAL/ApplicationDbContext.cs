@@ -10,6 +10,6 @@ namespace Automarket.DAL
             
         }
 
-        public DbSet<Car>
+        public DbSet<Car> Car { get; set; }
     }
 }
