@@ -1,0 +1,16 @@
+﻿@model List<Automarket.Domain.Models.Car>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@{
+    foreach(var car in Model) {
+        <p>car.Name</p>
+        <p>car.Model</p>
+        <p>car.Description</p>
+        <p>car.Price</p>
+        <p>car.DateCreate</p>
+    }
+}
