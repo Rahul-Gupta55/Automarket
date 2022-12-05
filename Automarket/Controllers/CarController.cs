@@ -1,22 +1,23 @@
 ﻿using Automarket.DAL.Interfaces;
+using Automarket.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Automarket.Controllers
 {
     public class CarController : Controller
     {
-        private readonly ICarRepository _carRepository;
+        private readonly ICarService _carService;
 
-        public CarController(ICarRepository carRepository)
+        public CarController(ICarService carService)
         {
-            _carRepository = carRepository;
+            _carService = carService;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetCars()
         {
-            var response = await _carRepository.GetAll();
-            return View(response);
+            var response = await _carService.GetCars();
+            return View(response.Data);
         }
     }
 }

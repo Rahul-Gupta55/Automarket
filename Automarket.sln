@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{82592143-C4B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.DAL", "Automarket.DAL\Automarket.DAL.csproj", "{2CBE1F64-925C-4FF0-B705-8B22959B8E6B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{5B7BDED4-5288-4F25-8003-1216C1BE51D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automarket.Service", "Automarket.Service\Automarket.Service.csproj", "{C9DA13D1-5CB0-47F1-842E-D7E05A305E17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{2CBE1F64-925C-4FF0-B705-8B22959B8E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CBE1F64-925C-4FF0-B705-8B22959B8E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CBE1F64-925C-4FF0-B705-8B22959B8E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DA13D1-5CB0-47F1-842E-D7E05A305E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DA13D1-5CB0-47F1-842E-D7E05A305E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DA13D1-5CB0-47F1-842E-D7E05A305E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DA13D1-5CB0-47F1-842E-D7E05A305E17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{344A4C46-9DF7-473C-9CDB-46EDCB058929} = {9AE39AA7-6B98-4545-B093-3CF160094466}
 		{2CBE1F64-925C-4FF0-B705-8B22959B8E6B} = {82592143-C4BB-43C4-8094-10F1C94E6E02}
+		{C9DA13D1-5CB0-47F1-842E-D7E05A305E17} = {5B7BDED4-5288-4F25-8003-1216C1BE51D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BED6CA8D-140E-4611-9FE5-88DC961E35C9}
